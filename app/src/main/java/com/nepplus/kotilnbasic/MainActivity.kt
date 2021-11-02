@@ -42,5 +42,11 @@ class MainActivity : AppCompatActivity() {
             txtCopyResult.text = inputcontent
         }
 
+        btnContentToast.setOnClickListener {
+            val inputcontent = edtContent.text.toString()
+
+            Toast.makeText(this, inputcontent, Toast.LENGTH_SHORT).show()
+        }
+
     }
 }
